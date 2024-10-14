@@ -6,11 +6,11 @@ import './App.css';
 
 const config = {
   transID: `KLMNOYZabcdefghijkl${Math.random().toString(36).slice(2)}qrstuvwxyz`,
-  email: 'user@example.com',
+  email: 'john@example.com',
   amount: 20,
   apiKey: 'TkdLb2VUMk46ZXRoWEdJSEF0Z24xOnB1WVUzd3dvS1c4bw==',
-  firstname: 'cool',
-  lastname: 'story'
+  firstname: 'john',
+  lastname: 'doe'
 };
 
 const onSuccess = (response) => {
