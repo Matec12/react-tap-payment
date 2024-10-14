@@ -33,7 +33,7 @@ const TAPPaymentHookExample = () => {
           initializePayment({ onSuccess, onClose });
         }}
       >
-        TAPPayment Hooks Implementation
+        TAPPayment Hooks Sample
       </button>
     </div>
   );
@@ -44,7 +44,7 @@ function App() {
 
   const componentProps = {
     ...config,
-    text: 'TAPPayment Button Implementation',
+    text: 'TAPPayment Button Sample',
     onSuccess,
     onClose
   };

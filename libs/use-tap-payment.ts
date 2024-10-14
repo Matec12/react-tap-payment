@@ -22,7 +22,8 @@ export default function useTAPPaymentPayment(hookConfig: HookConfig): Initialize
       metadata,
       label,
       quantity,
-      transaction_charge
+      transaction_charge,
+      ...rest
     } = args;
     const tapPaymentArgs: Record<string, any> = {
       callback: onSuccess ? onSuccess : () => null,
@@ -40,7 +41,8 @@ export default function useTAPPaymentPayment(hookConfig: HookConfig): Initialize
         ...(metadata && { metadata }),
         ...(label && { label }),
         ...(transaction_charge && { transaction_charge }),
-        ...(quantity && { quantity })
+        ...(quantity && { quantity }),
+        ...(rest && { ...rest })
       }
     };
 
