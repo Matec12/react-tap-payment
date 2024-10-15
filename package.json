@@ -1,6 +1,6 @@
 {
   "name": "react-tap-payment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ReactJS library for implementing TAP payment gateway",
   "type": "module",
   "main": "dist/index.js",
@@ -41,7 +41,7 @@
   "homepage": "https://github.com/matec12/react-tap-payment#readme",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
-    "tap-payment-popupjs": "^0.0.25"
+    "tap-payment-popupjs": "^0.0.26"
   },
   "devDependencies": {
     "@babel/core": "^7.25.8",
