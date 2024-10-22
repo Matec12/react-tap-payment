@@ -1,6 +1,6 @@
 {
   "name": "react-tap-payment",
-  "version": "1.0.1",
+  "version": "1.9.2-canary.0",
   "description": "ReactJS library for implementing TAP payment gateway",
   "type": "module",
   "main": "dist/index.js",
