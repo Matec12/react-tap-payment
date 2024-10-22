@@ -35,7 +35,7 @@ Note that both implementations produce the same results.
 
 ```javascript
 import { useState } from 'react';
-import { useTAPPaymentPayment } from './dist/index.es';
+import { useTAPPaymentPayment } from 'react-tap-payment';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -115,7 +115,7 @@ export default App;
 
 ``` javascript
 import { useState } from 'react';
-import { TAPPaymentButton } from './dist/index.es';
+import { TAPPaymentButton } from 'react-tap-payment';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
