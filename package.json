@@ -17,7 +17,8 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest --env=jsdom",
-    "test:watch": "jest --watch --verbose --env=jsdom"
+    "test:watch": "jest --watch --verbose --env=jsdom",
+    "set-version": "node set-version.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,7 @@
   "homepage": "https://github.com/matec12/react-tap-payment#readme",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
-    "tap-payment-popupjs": "^0.0.26"
+    "tap-payment-popupjs": "^1.0.0-canary.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.8",
