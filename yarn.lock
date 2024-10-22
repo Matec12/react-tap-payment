@@ -5064,10 +5064,10 @@ synckit@^0.9.1:
     "@pkgr/core" "^0.1.0"
     tslib "^2.6.2"
 
-tap-payment-popupjs@^1.0.0-canary.0:
-  version "1.0.0-canary.0"
-  resolved "https://registry.yarnpkg.com/tap-payment-popupjs/-/tap-payment-popupjs-1.0.0-canary.0.tgz#ec16b60044ca8fa93f4279d13bdbd27d13e4dd3d"
-  integrity sha512-CS4zC5VUztSQOz/KuDu3vvJbi0Y3So7q9s7g/gpleGYYzGjdXlg9oGO4borQwcEk75Bz2gON9jSb9BtOufq1lQ==
+tap-payment-popupjs@^1.0.0-canary.1:
+  version "1.0.0-canary.1"
+  resolved "https://registry.yarnpkg.com/tap-payment-popupjs/-/tap-payment-popupjs-1.0.0-canary.1.tgz#2e1805621dc33ff557d4eac694aaaeda266f5aa1"
+  integrity sha512-eQim3D4GuN9oG38epCNgjJwLCXQnq8cS1Y96B98h4WOgeKVAmaOvc4Xdv4hGn7gjvjZKH6eMrDG/xZSUDA/nWQ==
 
 test-exclude@^6.0.0:
   version "6.0.0"
