@@ -22,6 +22,11 @@ or with `yarn`
 yarn add react-tap-payment
 ```
 
+Versions
+	•	Version 1.0.4: Production-ready.
+	•	Version 1.0.3: Staging environment.
+
+
 ### Usage
 
 This library can be implemented into any react application in 3 different ways:
@@ -196,6 +201,7 @@ Inspiration!
 [React Paystack](https://www.npmjs.com/package/react-paystack) by Olusegun Ayeni .
 
 Thanks!
+
 Ibrahim Alayo.
 
 ## License
