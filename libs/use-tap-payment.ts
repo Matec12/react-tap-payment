@@ -35,6 +35,7 @@ export default function useTAPPaymentPayment(hookConfig: HookConfig): Initialize
       amount,
       savePaymentDetails: savePaymentDetails ?? undefined,
       customerReference: customerReference ?? undefined,
+      phone: phone ?? undefined,
       customPayload: {
         ...(firstname && { firstname }),
         ...(lastname && { lastname }),
