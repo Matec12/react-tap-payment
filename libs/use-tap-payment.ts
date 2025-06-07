@@ -33,9 +33,9 @@ export default function useTAPPaymentPayment(hookConfig: HookConfig): Initialize
       transID,
       email,
       amount,
+      phone: phone ?? undefined,
       savePaymentDetails: savePaymentDetails ?? undefined,
       customerReference: customerReference ?? undefined,
-      phone: phone ?? undefined,
       customPayload: {
         ...(firstname && { firstname }),
         ...(lastname && { lastname }),
