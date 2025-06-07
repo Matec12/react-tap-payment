@@ -24,7 +24,7 @@ yarn add react-tap-payment
 
 Versions
 	•	Version 1.0.4: Production-ready.
-	•	Version 1.0.3: Staging environment.
+	•	Version 1.0.5: Staging environment.
 
 
 ### Usage
@@ -50,6 +50,9 @@ const config = {
   email: 'john@example.com',
   amount: 20,
   apiKey: 'TkdLb2VUMk46ZXRoWEdJSEF0Z24xOnB1WVUzd3dvS1c4bw==',
+  // savePaymentDetails: true, // Set to true to save payment details
+  // customerReference: ` unique reference(8 or more characters) for the customer`, // Required if savePaymentDetails is true
+  // phone: `09074820394`, // Required if savePaymentDetails is true
   firstname: 'john',
   lastname: 'doe'
 };
@@ -130,7 +133,10 @@ const config = {
   email: 'john@example.com',
   amount: 20,
   apiKey: 'TkdLb2VUMk46ZXRoWEdJSEF0Z24xOnB1WVUzd3dvS1c4bw==',
- firstname: 'john',
+  // savePaymentDetails: true, // Set to true to save payment details
+  // customerReference: ` unique reference(8 or more characters) for the customer`, // Required if savePaymentDetails is true
+  // phone: `09074820394`, // Required if savePaymentDetails is true
+  firstname: 'john',
   lastname: 'doe'
 };
 

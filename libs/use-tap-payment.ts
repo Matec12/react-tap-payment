@@ -11,18 +11,19 @@ export default function useTAPPaymentPayment(hookConfig: HookConfig): Initialize
 
     const {
       apiKey,
+      amount,
+      transID,
       firstname,
       lastname,
       phone,
       email,
-      amount,
-      transID,
+      savePaymentDetails,
+      customerReference,
       billerID,
       productID,
       metadata,
       label,
       quantity,
-      transaction_charge,
       ...rest
     } = args;
     const tapPaymentArgs: Record<string, any> = {
@@ -32,15 +33,17 @@ export default function useTAPPaymentPayment(hookConfig: HookConfig): Initialize
       transID,
       email,
       amount,
+      savePaymentDetails: savePaymentDetails ?? undefined,
+      customerReference: customerReference ?? undefined,
       customPayload: {
         ...(firstname && { firstname }),
         ...(lastname && { lastname }),
+        ...(email && { email }),
         ...(phone && { phone }),
         ...(billerID && { billerID }),
         ...(productID && { productID }),
         ...(metadata && { metadata }),
         ...(label && { label }),
-        ...(transaction_charge && { transaction_charge }),
         ...(quantity && { quantity }),
         ...(rest && { ...rest })
       }

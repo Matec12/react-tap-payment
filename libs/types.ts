@@ -13,6 +13,8 @@ export interface TAPPaymentProps {
   firstname?: string;
   lastname?: string;
   phone?: number | string;
+  savePaymentDetails: boolean;
+  customerReference: string;
   billerID?: string;
   productID?: string;
   metadata?: TAPPaymentMetadata;
