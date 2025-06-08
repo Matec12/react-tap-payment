@@ -10,7 +10,10 @@ const config = {
   amount: 20,
   apiKey: 'TkdLb2VUMk46ZXRoWEdJSEF0Z24xOnB1WVUzd3dvS1c4bw==',
   firstname: 'john',
-  lastname: 'doe'
+  lastname: 'doe',
+  phone: '123456789',
+  savePaymentDetails: true,
+  customerReference: '1828292899'
 };
 
 const onSuccess = (response) => {
