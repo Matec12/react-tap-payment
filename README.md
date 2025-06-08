@@ -24,7 +24,7 @@ yarn add react-tap-payment
 
 Versions
 	•	Version 1.0.4: Production-ready.
-	•	Version 1.0.7: Staging environment.
+	•	Version 1.0.10: Staging environment.
 
 
 ### Usage
