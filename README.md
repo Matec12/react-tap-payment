@@ -23,10 +23,10 @@ yarn add react-tap-payment
 ```
 
 Versions
-    •	Version 2.0.0: Current stable version. Introduces an `env` parameter for environment selection (e.g., 'sandbox', 'production'), eliminating the need for separate library versions for different environments. Parameters `savePaymentDetails`, `customerReference`, and `phone` are available in this version.
-    •	Version 1.0.4: Production-ready. (Deprecated: Please use v2.0.0 for new projects. This version does not support the `env` parameter.)
-    •	Version 1.0.3: Staging environment. (Deprecated: Please use v2.0.0 for new projects. This version does not support the `env` parameter.)
 
+    • Version 2.0.0: Current stable version. Introduces an `env` parameter for environment selection (e.g., 'sandbox', 'production'), eliminating the need for separate library versions for different environments. Parameters `savePaymentDetails`, `customerReference`, and `phone` are available in this version.
+    • Version 1.0.4: Production-ready. (Deprecated: Please use v2.0.x for new projects. This version does not support the `env` parameter.)
+    • Version 1.0.3: Staging environment. (Deprecated: Please use v2.0.x for new projects. This version does not support the `env` parameter.)
 
 ### Usage
 
@@ -339,3 +339,35 @@ function AppV1() {
     </div>
   );
 }
+export default App;
+
+```
+
+Please checkout [TAPPayment Documentation](https://www.npmjs.com/package/tap-payment-popupjs) for other available options you can add to use the inlinejs directly.
+
+## Deployment
+
+REMEMBER TO CHANGE THE KEY WHEN DEPLOYING ON A LIVE/PRODUCTION SYSTEM
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -am 'Some commit message'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request
+
+## How can I thank you?
+
+Why not star the github repo? I'd love the attention! Why not share the link for this repository on Twitter or Any Social Media? Spread the word!
+
+Inspiration!
+[React Paystack](https://www.npmjs.com/package/react-paystack) by Olusegun Ayeni .
+
+Thanks!
+
+Ibrahim Alayo.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
