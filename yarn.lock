@@ -5158,10 +5158,10 @@ synckit@^0.9.1:
     "@pkgr/core" "^0.1.0"
     tslib "^2.6.2"
 
-tap-payment-popupjs@^1.0.3:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/tap-payment-popupjs/-/tap-payment-popupjs-1.0.6.tgz#8d73b6d5188b17d244a8ced3feb24d370dbc4fce"
-  integrity sha512-GSFuZjS/2LudYd6KXvjJAPMxl54GKLAq75He87QU8vSHn0PHF/CoLKEIGGwQUQYGRwD/RiKvw8OoRJkY6SqSEA==
+tap-payment-popupjs@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tap-payment-popupjs/-/tap-payment-popupjs-2.0.0.tgz#97eb999aca97caa177dbc5ade84e3c8dd3464a4b"
+  integrity sha512-pY6bBsRaa6OECXOnKgIwRiXJ47fBEAWeoT0P1PbAU9MVwAwFTGwL0sp+1P2eOuTCHR2eOkarh7Iehau+lRZ6yg==
 
 test-exclude@^6.0.0:
   version "6.0.0"

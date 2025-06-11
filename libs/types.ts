@@ -9,6 +9,7 @@ export interface TAPPaymentProps {
   transID: string;
   email: string;
   amount: number;
+  env: 'sandbox' | 'production';
   customPayload?: TAPPaymentMetadata;
   firstname?: string;
   lastname?: string;

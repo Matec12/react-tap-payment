@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 const config = {
+  env: 'sandbox', // or 'production'
   transID: `KLMNOYZabcdefghijkl${Math.random().toString(36).slice(2)}qrstuvwxyz`,
   email: 'john@example.com',
   amount: 20,
