@@ -17,7 +17,7 @@
     "declaration": true,                   /* Generates corresponding '.d.ts' file. */
     // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     "sourceMap": true,                     /* Generates corresponding '.map' file. */
-    "outDir": "example/src/dist",                        /* Redirect output structure to the directory. */
+    "outDir": "example/react/src/dist",                        /* Redirect output structure to the directory. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "composite": true,                     /* Enable project compilation */
     // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
@@ -72,7 +72,7 @@
     "node_modules",
     "test",
     "example",
-    "example/src/dist",
+    "example/react/src/dist",
     "**/*.spec.ts",
     "rollup.config.js",
     "build"

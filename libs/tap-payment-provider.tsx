@@ -1,10 +1,10 @@
 import React from 'react';
 import TAPPaymentContext from './tap-payment-context';
-import useTAPPaymentPayment from './use-tap-payment';
+import useTAPPayment from './use-tap-payment';
 import { callback, TAPPaymentProps } from './types';
 
 interface TAPPaymentProviderProps extends TAPPaymentProps {
-  children: JSX.Element;
+  children: React.JSX.Element;
   onSuccess: callback;
   onClose: callback;
 }
@@ -14,8 +14,8 @@ const TAPPaymentProvider = ({
   onSuccess,
   onClose,
   ...config
-}: TAPPaymentProviderProps): JSX.Element => {
-  const initializePayment = useTAPPaymentPayment(config);
+}: TAPPaymentProviderProps): React.JSX.Element => {
+  const initializePayment = useTAPPayment(config);
 
   return (
     <TAPPaymentContext.Provider value={{ config, initializePayment, onSuccess, onClose }}>

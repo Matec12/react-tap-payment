@@ -43,7 +43,7 @@ With version 2.0.0 and above, an `env` parameter is introduced in the configurat
 
 ```javascript
 import { useState } from 'react';
-import { useTAPPaymentPayment } from 'react-tap-payment';
+import { useTAPPayment } from 'react-tap-payment';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -72,7 +72,7 @@ const onClose = () => {
 };
 
 const TAPPaymentHookExampleV2 = () => {
-  const initializePayment = useTAPPaymentPayment(config_v2);
+  const initializePayment = useTAPPayment(config_v2);
 
   return (
     <div>
@@ -107,7 +107,7 @@ function App() {
     firstname: 'jane',
     lastname: 'doe'
   };
-  const initializePayment_v1 = useTAPPaymentPayment(config_v1); // Assuming useTAPPaymentPayment is backward compatible or you'd use an older version of the lib
+  const initializePayment_v1 = useTAPPayment(config_v1); // Assuming useTAPPayment is backward compatible or you'd use an older version of the lib
    const componentProps_v1 = {
     ...config_v1,
     text: 'TAPPayment Button Sample (v1.0.x - Deprecated)',
@@ -222,7 +222,7 @@ The following examples apply to versions 1.0.3 and 1.0.4, which are now deprecat
 
 ```javascript
 import { useState } from 'react';
-import { useTAPPaymentPayment } from 'react-tap-payment'; // Assuming you are using an older version of the library
+import { useTAPPayment } from 'react-tap-payment'; // Assuming you are using an older version of the library
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -260,7 +260,7 @@ const onClose = () => {
 
 const TAPPaymentHookExampleV1 = () => {
   // Choose the appropriate config for the v1.0.x version you are targeting
-  const initializePayment = useTAPPaymentPayment(config_v1_prod);
+  const initializePayment = useTAPPayment(config_v1_prod);
 
   return (
     <div>

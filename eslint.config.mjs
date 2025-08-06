@@ -11,25 +11,25 @@ export default [
     ...PluginJest.configs['flat/recommended'],
     rules: {
       ...PluginJest.configs['flat/recommended'].rules,
-      'jest/prefer-expect-assertions': 'off',
-    },
+      'jest/prefer-expect-assertions': 'off'
+    }
   },
   {
-    files: ['**/*.{js,ts,jsx,tsx}'],
+    files: ['**/*.{js,ts,jsx,tsx}']
   },
   {
     files: ['**/*.js'],
-    languageOptions: {sourceType: 'commonjs'},
+    languageOptions: { sourceType: 'commonjs' }
   },
   {
-    languageOptions: {globals: globals.browser},
+    languageOptions: { globals: globals.browser }
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   eslintPluginPrettierRecommended,
   {
-    ignores: ['example/', 'dist/', 'babel.config.js', 'jest.config.js'],
+    ignores: ['example/', 'dist/', 'babel.config.js', 'jest.config.js']
   },
   {
     rules: {
@@ -39,6 +39,7 @@ export default [
       '@typescript-eslint/ban-ts-ignore': 'off',
       '@typescript-eslint/interface-name-prefix': 'off',
       '@typescript-eslint/ban-ts-comment': 'off',
-    },
-  },
+      'react-hooks/rules-of-hooks': 'off'
+    }
+  }
 ];

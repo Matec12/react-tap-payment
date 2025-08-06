@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { useTAPPaymentPayment, TAPPaymentButton } from './dist/index.es';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
+'use client';
 
-const config = {
+import { useState } from 'react';
+import { useTAPPayment, TAPPaymentButton } from '../dist';
+import './index.css';
+
+const config: any = {
   env: 'sandbox', // or 'production'
   transID: `KLMNOYZabcdefghijkl${Math.random().toString(36).slice(2)}qrstuvwxyz`,
   email: 'john@example.com',
@@ -17,7 +17,7 @@ const config = {
   customerReference: '1828292899'
 };
 
-const onSuccess = (response) => {
+const onSuccess = (response: any) => {
   // Implementation for whatever you want to do with response and after success call.
   console.log('response', response);
 };
@@ -28,7 +28,7 @@ const onClose = () => {
 };
 
 const TAPPaymentHookExample = () => {
-  const initializePayment = useTAPPaymentPayment(config);
+  const initializePayment = useTAPPayment(config);
   return (
     <div>
       <button
@@ -43,7 +43,7 @@ const TAPPaymentHookExample = () => {
   );
 };
 
-function App() {
+function PaymentScreen() {
   const [count, setCount] = useState(0);
 
   const componentProps = {
@@ -54,13 +54,10 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="PaymentScreen">
       <div>
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src="/next.svg" className="logo" alt="Next logo" />
         </a>
       </div>
       <h1>Vite + React</h1>
@@ -75,4 +72,4 @@ function App() {
   );
 }
 
-export default App;
+export default PaymentScreen;

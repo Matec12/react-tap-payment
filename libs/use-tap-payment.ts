@@ -1,7 +1,7 @@
 import { HookConfig, InitializePayment } from './types';
 import { callTAPPaymentPop } from './tap-payment-actions';
 
-export default function useTAPPaymentPayment(hookConfig: HookConfig): InitializePayment {
+export default function useTAPPayment(hookConfig: HookConfig): InitializePayment {
   function initializePayment({
     config,
     onSuccess,

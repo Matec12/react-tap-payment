@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { callback, TAPPaymentProps } from './types';
-import useTAPPaymentPayment from './use-tap-payment';
+import useTAPPayment from './use-tap-payment';
 
 interface TAPPaymentButtonProps extends TAPPaymentProps {
   text?: string;
@@ -19,8 +19,8 @@ const TAPPaymentButton = ({
   onClose,
   disabled,
   ...config
-}: TAPPaymentButtonProps): JSX.Element => {
-  const initializePayment = useTAPPaymentPayment(config);
+}: TAPPaymentButtonProps): React.JSX.Element => {
+  const initializePayment = useTAPPayment(config);
 
   return (
     <button
