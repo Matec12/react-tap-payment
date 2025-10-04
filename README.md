@@ -24,7 +24,7 @@ yarn add react-tap-payment
 
 Versions
 
-    • Version 2.0.0: Current stable version. Introduces an `env` parameter for environment selection (e.g., 'sandbox', 'production'), eliminating the need for separate library versions for different environments. Parameters `savePaymentDetails`, `customerReference`, and `phone` are available in this version.
+    • Version 2.0.x: Current stable version. Introduces an `env` parameter for environment selection (e.g., 'sandbox', 'production'), eliminating the need for separate library versions for different environments. Parameters `savePaymentDetails`, `customerReference`, and `phone` are available in this version.
     • Version 1.0.4: Production-ready. (Deprecated: Please use v2.0.x for new projects. This version does not support the `env` parameter.)
     • Version 1.0.3: Staging environment. (Deprecated: Please use v2.0.x for new projects. This version does not support the `env` parameter.)
 
@@ -54,6 +54,7 @@ const config_v2 = {
   email: 'john@example.com',
   amount: 20,
   apiKey: 'YOUR_API_KEY_FOR_THE_SELECTED_ENV', // e.g., your production or sandbox key
+  superMerchantFee: 10.23, // Optional fee amount for super merchant transactions. Used for advanced fee management scenarios. 
   savePaymentDetails: true, // Set to true to save payment details
   customerReference: `unique_ref_${Math.random().toString(36).slice(10)}`, // Required if savePaymentDetails is true (8 or more characters)
   phone: `09074820394`, // Required if savePaymentDetails is true

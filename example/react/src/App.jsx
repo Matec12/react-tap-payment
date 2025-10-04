@@ -9,6 +9,7 @@ const config = {
   transID: `KLMNOYZabcdefghijkl${Math.random().toString(36).slice(2)}qrstuvwxyz`,
   email: 'john@example.com',
   amount: 20,
+  superMerchantFee: 10.23, // Optional fee amount for super merchant transactions. Used for advanced fee management scenarios.
   apiKey: 'TkdLb2VUMk46ZXRoWEdJSEF0Z24xOnB1WVUzd3dvS1c4bw==',
   firstname: 'john',
   lastname: 'doe',
