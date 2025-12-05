@@ -42,7 +42,7 @@
   "homepage": "https://github.com/matec12/react-tap-payment#readme",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
-    "tap-payment-popupjs": "^2.0.4"
+    "tap-payment-popupjs": "^2.0.5"
   },
   "peerDependencies": {
     "react": "^19.1.1",
