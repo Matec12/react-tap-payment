@@ -8,6 +8,11 @@ import pkg from './package.json';
 
 export default {
   input: 'libs/index.ts',
+  // Keep tap-payment-popupjs out of the bundle. Inlining it froze a copy of the payment SDK
+  // into every release, so a fix published there reached nobody until this package was
+  // rebuilt and republished as well. Left external it installs alongside us and picks up
+  // patch releases on its own.
+  external: Object.keys(pkg.dependencies || {}),
   output: [
     {
       file: pkg.main,
