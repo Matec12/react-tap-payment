@@ -26,7 +26,7 @@ Requires React 16.8 or later.
 
 Versions
 
-    • Version 2.1.x: Current stable version. The underlying `tap-payment-popupjs` SDK is installed alongside this package rather than bundled into it, so its fixes arrive without waiting for a release here. Fixes a hang on the first payment attempt, and `superMerchantFee` not reaching the gateway.
+    • Version 2.1.x: Current stable version. The underlying `tap-payment-popupjs` SDK is installed alongside this package rather than bundled into it, so its fixes arrive without waiting for a release here. Fixes a hang on the first payment attempt, and `superMerchantFee` not reaching the gateway. From 2.1.1 it requires `tap-payment-popupjs` 2.0.8 or later, which fixes customers seeing "We could not start this transaction" on slow connections.
     • Version 2.0.x: Introduces an `env` parameter for environment selection (e.g., 'sandbox', 'production'), eliminating the need for separate library versions for different environments. Parameters `savePaymentDetails`, `customerReference`, and `phone` are available in this version.
     • Version 1.0.4: Production-ready. (Deprecated: Please use v2.1.x for new projects. This version does not support the `env` parameter.)
     • Version 1.0.3: Staging environment. (Deprecated: Please use v2.1.x for new projects. This version does not support the `env` parameter.)
@@ -36,6 +36,8 @@ Versions
 `tap-payment-popupjs` is now installed alongside this package instead of being bundled into it. Nothing changes in how you use the library, but its fixes now arrive through its own releases rather than waiting for one here.
 
 Two of those fixes come with this release: the first payment attempt on a page could hang on the loading spinner and never show the checkout, which affected single page applications most; and `superMerchantFee` was read under a different name internally, so anything passed under the documented name was discarded and the fee never reached the gateway.
+
+2.1.1 raises the minimum `tap-payment-popupjs` to 2.0.8. Earlier versions sent the transaction to the checkout once, and if the checkout was still loading at that moment, most often on a slow mobile connection, the transaction was lost and the customer saw "We could not start this transaction". 2.0.8 keeps the transaction until the checkout confirms it has received it. Nothing changes in how you use the library.
 
 ### Usage
 
